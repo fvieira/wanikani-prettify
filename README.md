@@ -12,8 +12,21 @@ The only disadvantage of this choice is that the style that is there might not b
 ### Slightly harder way
 Open the extension's options page. Go to the Styles tab and click `Add a new style...`.
 In the URL put `www.wanikani.com` and below paste the contents of the wanikani.css file.
+
+Now, you have to remove the first and last line that you just copied since they are used only in Firefox and break in Chrome.
+The two lines to remove are these:
+```css
+@-moz-document domain("www.wanikani.com") {
+...
+}
+```
 Click Add and it's done!
 
+## Firefox
+First, install the Stylish extension (you might have to restart the browser after installing).
+Next go to Stylish Preferences and click `Manage styles...`.
+Now click `Write New Style`, give it some name (like "Wanikani Prettify") and paste the contents of the wanikani.css file below.
+This should be all that is needed.
 
 ## Other browsers
 Waiting for someone to tell me how they're doing it. xD
