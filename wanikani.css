@@ -1,0 +1,80 @@
+/***** REVIEWS PAGE *****/
+
+/* Remove review background pattern */
+#reviews #character.radical,
+#reviews #character.kanji,
+#reviews #character.vocabulary {
+    background-image: none;
+}
+
+/* Use weaker colors for review background so it hurts eyes less*/
+#reviews #character.kanji {
+    background: #E000A0;
+}
+
+#reviews #character.radical {
+    background: #0090E0;
+}
+
+/* Improve review options readability */
+#reviews #hotkeys {
+    font-weight: bold;
+    color: #777777;
+}
+
+#reviews nav li i {
+    color: #707070;
+}
+
+#reviews nav li.inactive i {
+    color: #C8C8C8;
+}
+
+#reviews nav li:not(#option-submit):hover i {
+    color: #333;
+}
+
+#reviews nav li.inactive:not(#option-submit):hover i {
+    color: #C8C8C8;
+}
+
+/* Improve answer readability */
+#reviews #question-form input[type="text"] {
+    font-weight: bold;
+    font-size: 28px;
+    height: 2.5em;
+}
+
+/* Makes right and wrong colors stronger again */
+#reviews #question-form fieldset.correct {
+    background-color: #C0FF6B;
+}
+
+#reviews #question-form fieldset.incorrect {
+    /* background-color: #FFD0D4; */
+    background-color: #FF5462;
+}
+
+#reviews #question-form fieldset.correct input[type="text"] {
+    -webkit-text-fill-color: #689B27;
+    color: #689B27;
+}
+
+#reviews #question-form fieldset.incorrect input[type="text"] {
+    -webkit-text-fill-color: #B30000;
+    color: #B30000;
+}
+
+/* Makes the waiting color when submiting an answer be greyish */
+#reviews #loading {
+    background-color: rgba(162, 156, 141, 0.5);
+}
+
+
+
+/***** REST OF THE SITE *****/
+
+/* Makes kanji legend in vocabulary and radicals page more visible */
+.standard table, .standard ul {
+    color: white;
+}
